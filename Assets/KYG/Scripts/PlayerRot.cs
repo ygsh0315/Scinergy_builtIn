@@ -29,10 +29,10 @@ public class PlayerRot : MonoBehaviour
             transform.rotation =Quaternion.Slerp(transform.rotation, lookRotationY, Time.deltaTime);
             camPos.rotation = Quaternion.Slerp(camPos.rotation, LookRotationX, Time.deltaTime);
             print(Vector3.Angle(camPos.eulerAngles, starDirection));
-            if (Vector3.Angle(camPos.forward, starDirection) < 5f)
+            if (Vector3.Angle(camPos.forward, starDirection) < 1f)
             {
                 rotX = transform.eulerAngles.y;
-                rotY = -camPos.eulerAngles.x;
+                rotY = -Vector3.Angle(new Vector3(starLookDirection.x,0,starLookDirection.z) - transform.position, starLookDirection - transform.position);
                 starLook = false;
             }
         }
