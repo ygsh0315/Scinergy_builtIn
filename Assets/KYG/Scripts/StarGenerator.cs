@@ -104,7 +104,7 @@ public class StarGenerator : MonoBehaviour
         float z = rr * Mathf.Cos(ra);
 
         star.name = starName;
-        star.transform.position = new Vector3(x, y, z);
+        star.transform.localPosition = new Vector3(x, y, z);
         player.GetComponent<PlayerRot>().StarSet(star.transform.position);
     }
 }

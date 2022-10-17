@@ -42,7 +42,7 @@ public class PlayerRot : MonoBehaviour
             float my = Input.GetAxis("Mouse Y");
             rotX += mx * rotSpeed * Time.deltaTime;
             rotY += -my * rotSpeed * Time.deltaTime;
-            rotY = Mathf.Clamp(rotY, -60f, 60f);
+            //rotY = Mathf.Clamp(rotY, -60f, 60f);
             transform.localEulerAngles = new Vector3(0, rotX, 0);
             camPos.localEulerAngles = new Vector3(rotY, 0, 0);
         }
