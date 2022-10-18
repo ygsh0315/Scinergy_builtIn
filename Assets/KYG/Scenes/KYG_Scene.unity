@@ -4739,7 +4739,14 @@ MonoBehaviour:
   brightnessDropdown: {fileID: 1713602932}
   starTypeList:
   - {fileID: 7177477379725082803, guid: 2dde6c732a0a7744aaf91737fe803f6b, type: 3}
-  starBrightnessList: []
+  starBrightnessList:
+  - {fileID: 1607489160101874, guid: 7f6d536c03c863b4b9506edfb5640edd, type: 3}
+  - {fileID: 1607489160101874, guid: d49c6c73f7393dd44a1361e7d130240f, type: 3}
+  - {fileID: 1607489160101874, guid: e508b99c1b9828548966ab50d78e7eb3, type: 3}
+  - {fileID: 1607489160101874, guid: 6986b8758c980a443aab73cad85bb2cb, type: 3}
+  - {fileID: 1607489160101874, guid: ad97130ba8146c148a38553c55b5d5e9, type: 3}
+  - {fileID: 1607489160101874, guid: 09e5e4ea2f8ba2841827e3d904a71f5b, type: 3}
+  - {fileID: 1607489160101874, guid: 75065dff70603024bbf2f4a71c8819cd, type: 3}
   CelestialSpehere: {fileID: 968449916}
   celestialSphereRadius: 1000
   starName: 

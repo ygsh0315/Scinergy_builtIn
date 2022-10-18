@@ -94,7 +94,9 @@ public class StarGenerator : MonoBehaviour
     public void OnGenerateStarBtn()
     {
         GameObject star = Instantiate(starType);
+        GameObject starBrightness = Instantiate(brightness);
         star.transform.parent = CelestialSpehere.transform;
+        starBrightness.transform.parent = star.transform;
         dec = dec * (Mathf.PI / 180);
         dec = (Mathf.PI / 2) - dec;
         ra = ra * -15f * Mathf.PI / 180;
