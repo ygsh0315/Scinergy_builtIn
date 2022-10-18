@@ -21,8 +21,8 @@ public class SYA_PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        float h = SYA_InputManager.GetAxis("Horizontal");
+        float v = SYA_InputManager.GetAxis("Vertical");
         Vector3 dir = Vector3.forward * v + Vector3.right * h;
         dir = Camera.main.transform.TransformDirection(dir);
         dir.Normalize();
@@ -41,3 +41,4 @@ public class SYA_PlayerMove : MonoBehaviour
         cc.Move(dir * speed * Time.deltaTime);
     }
 }
+
